@@ -8,7 +8,7 @@ module RobotHelper
     #   url = temp.slug + '/' + url
     #   temp = temp.parent
     # end
-    return hostname + url
+    return url.gsub! %r{/$}, ''
   end
 
 end
